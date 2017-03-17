@@ -8,7 +8,7 @@ const express = require('express'),
 router.use(express.static(`./public`));
 
 router.set('view engine', 'pug');
-router.set('views', `${__dirname}/templates`);
+router.set('views', `${__dirname}/views`);
 
 router.get('/', (req, res, next) => {
   res.render('index', {
