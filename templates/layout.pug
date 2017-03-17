@@ -11,6 +11,8 @@ html(lang='en')
     link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600', rel='stylesheet', type='text/css')
     link(href='../assets/css/toolkit.css', rel='stylesheet')
     link(href='../assets/css/application.css', rel='stylesheet')
+    if page == 'docs'
+      link(href="../assets/css/docs.css", rel="stylesheet")
   body.with-top-navbar
     #app-growl.growl
     nav.navbar.navbar-inverse.navbar-fixed-top.app-navbar
