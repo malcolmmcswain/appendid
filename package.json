@@ -1,0 +1,22 @@
+{
+  "name": "appendid",
+  "version": "1.0.0",
+  "description": "Appendid is a community platform for writers to share their work and get meaningful feedback.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/malcolmmcswain/appendid.git"
+  },
+  "author": "Malcolm McSwain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/malcolmmcswain/appendid/issues"
+  },
+  "homepage": "https://github.com/malcolmmcswain/appendid#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
