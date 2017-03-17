@@ -11,22 +11,32 @@ router.set('view engine', 'pug');
 router.set('views', `${__dirname}/templates`);
 
 router.get('/', (req, res, next) => {
-  res.render('index', { title: 'Home' });
+  res.render('index', {
+    page: 'index',
+    title: 'Home'
+  });
   next();
 });
 
 router.get('/profile', (req, res, next) => {
-  res.render('profile', { title: 'My Profile' });
+  res.render('profile', {
+    page: 'profile',
+    title: 'My Profile'
+  });
   next();
 });
 
 router.get('/notifications', (req, res, next) => {
-  res.render('notifications', { title: 'Notifications' });
+  res.render('notifications', {
+    page: 'notifications',
+    title: 'Notifications'
+  });
   next();
 });
 
 router.get('/api-documentation', (req, res, next) => {
   res.render('docs', {
+    page: 'docs',
     title: 'API Documentation'
   });
 });
