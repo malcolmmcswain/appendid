@@ -11,7 +11,7 @@ router.set('view engine', 'pug');
 router.set('views', `${__dirname}/templates`);
 
 router.get('/', (req, res, next) => {
-   res.send('<h1>Hello world!</h1>');
+   res.render('index');
    next();
 });
 
