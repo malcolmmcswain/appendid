@@ -4,7 +4,12 @@ const express = require('express'),
          http = require('http'),
        router = express(),
        server = http.createServer(router);
-       
+
+router.use(express.static(`${__dirname}/public`));
+
+router.set('view engine', 'pug');
+router.set('views', `${__dirname}/templates`);
+
 router.get('/', (req, res, next) => {
    res.send('<h1>Hello world!</h1>');
    next();
