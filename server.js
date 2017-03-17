@@ -11,7 +11,7 @@ router.set('view engine', 'pug');
 router.set('views', `${__dirname}/templates`);
 
 router.get('/', (req, res, next) => {
-   res.render('index');
+   res.render('index', { title: 'Home', name: 'Malcolm' });
    next();
 });
 
