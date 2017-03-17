@@ -5,7 +5,7 @@ const express = require('express'),
        router = express(),
        server = http.createServer(router);
 
-router.use(express.static(`${__dirname}/public`));
+router.use(express.static(`${__dirname}/public/docs`));
 
 router.set('view engine', 'pug');
 router.set('views', `${__dirname}/templates`);

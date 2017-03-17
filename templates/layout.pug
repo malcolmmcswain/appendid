@@ -1,17 +1,67 @@
 doctype html
-html
+html(lang='en')
   head
-    
     meta(charset='utf-8')
-    meta(http-equiv='X-UA-Compatible' content='IE=edge')
-    meta(name='description' content='Appendid is a community platform for writers to share their work and get meaningful feedback.')
-    meta(name='keywords' content='writers,community,sharing')
-    meta(name='author' content='Malcolm McSwain')
-    
-    title appendid | #{title}
-    
-  body
-    
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='')
+    meta(name='keywords', content='')
+    meta(name='author', content='')
+    title  #{title} &middot; appendid
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600', rel='stylesheet', type='text/css')
+    link(href='assets/css/toolkit.css', rel='stylesheet')
+    link(href='assets/css/application.css', rel='stylesheet')
+  body.with-top-navbar
+    #app-growl.growl
+    nav.navbar.navbar-inverse.navbar-fixed-top.app-navbar
+      .container
+        .navbar-header
+          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar-collapse-main')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          |  
+          a.navbar-brand(href='index.html')
+            img(src='assets/img/brand-white.png', alt='brand')
+        #navbar-collapse-main.navbar-collapse.collapse
+          ul.nav.navbar-nav.hidden-xs
+            li.active
+              a(href='index.html') Home
+            li
+              a(href='profile/index.html') Profile
+            li
+              a(data-toggle='modal', href='#msgModal') Messages
+            li
+              a(href='docs/index.html') Docs
+          ul.nav.navbar-nav.navbar-right.m-r-0.hidden-xs
+            li
+              a.app-notifications(href='notifications/index.html')
+                span.icon.icon-bell
+            li
+              button.btn.btn-default.navbar-btn.navbar-btn-avitar(data-toggle='popover')
+                img.img-circle(src='assets/img/avatar-dhg.png')
+          form.navbar-form.navbar-right.app-search(role='search')
+            .form-group
+              input.form-control(type='text', data-action='grow', placeholder='Search')
+          ul.nav.navbar-nav.hidden-sm.hidden-md.hidden-lg
+            li
+              a(href='index.html') Home
+            li
+              a(href='profile/index.html') Profile
+            li
+              a(href='notifications/index.html') Notifications
+            li
+              a(data-toggle='modal', href='#msgModal') Messages
+            li
+              a(href='docs/index.html') Docs
+            li
+              a(href='#', data-action='growl') Growl
+            li
+              a(href='login/index.html') Logout
+          ul.nav.navbar-nav.hidden
+            li
+              a(href='#', data-action='growl') Growl
+            li
+              a(href='login/index.html') Logout
     block content
-    
-    script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js')
