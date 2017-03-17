@@ -20,6 +20,11 @@ router.get('/profile', (req, res, next) => {
   next();
 });
 
+router.get('/notifications', (req, res, next) => {
+  res.render('notifications', { title: 'Notifications' });
+  next();
+});
+
 server.listen(process.env.PORT || 3000, process.env.IP || '0.0.0.0', () => {
   console.log('Server running!');
 });

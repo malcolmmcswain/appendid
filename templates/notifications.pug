@@ -1,0 +1,273 @@
+extends layout
+block content
+  .container.p-t-md
+    .row
+      .col-md-3
+        .list-group.m-b-md
+          a.list-group-item(href='#')
+            span.icon.icon-chevron-thin-right.pull-right
+            |  Notifications
+          a.list-group-item(href='#')
+            span.icon.icon-chevron-thin-right.pull-right
+            |  Mentions
+        .panel.panel-default.visible-md-block.visible-lg-block
+          .panel-body
+            h5.m-t-0
+              | Photos 
+              small
+                | &middot; 
+                a(href='#') Edit
+            div(data-grid='images', data-target-height='150')
+              div
+                img(data-width='640', data-height='640', data-action='zoom', src='../assets/img/instagram_5.jpg')
+              div
+                img(data-width='640', data-height='640', data-action='zoom', src='../assets/img/instagram_6.jpg')
+              div
+                img(data-width='640', data-height='640', data-action='zoom', src='../assets/img/instagram_7.jpg')
+              div
+                img(data-width='640', data-height='640', data-action='zoom', src='../assets/img/instagram_8.jpg')
+              div
+                img(data-width='640', data-height='640', data-action='zoom', src='../assets/img/instagram_9.jpg')
+              div
+                img(data-width='640', data-height='640', data-action='zoom', src='../assets/img/instagram_10.jpg')
+        .panel.panel-default.visible-md-block.visible-lg-block
+          .panel-body
+            h5.m-t-0
+              | Trending Searches 
+              small
+                | &middot; 
+                a(href='#') Change
+            ul.list-unstyled.list-spaced
+              li
+                a(href='#') #Bootstrap
+              li
+                a(href='#') Mdo for pres
+              li
+                a(href='#') #fatsux
+              li
+                a(href='#') #buyme
+              li
+                a(href='#') #designishard
+              li
+                a(href='#') #helpawesomepeople
+              li
+                a(href='#') #doawesomestuff
+              li
+                a(href='#') Tom Brady
+              li
+                a(href='#') Magna Carta
+              li
+                a(href='#') Mark Otto
+              li
+                a(href='#') Dave Gamache
+              li
+                a(href='#') Jacob Thornton
+      .col-md-6
+        ul.list-group.media-list.media-list-stream
+          li.list-group-item.p-a
+            h3.m-a-0 Notifications
+          li.list-group-item.media.p-a
+            .media-left
+              span.icon.icon-globe.text-muted
+            .media-body
+              small.pull-right.text-muted 1 min
+              .media-heading
+                a(href='#')
+                  strong Dave Gamache
+                |  went traveling
+          li.list-group-item.media.p-a
+            .media-left
+              span.icon.icon-game-controller.text-muted
+            .media-body
+              small.pull-right.text-muted 3 min
+              .media-heading
+                a(href='#')
+                  strong Mark Otto
+                |  played destiny
+          li.list-group-item.media.p-a
+            .media-left
+              span.icon.icon-user.text-muted
+            .media-body
+              small.pull-right.text-muted 34 min
+              .media-heading
+                a(href='#')
+                  strong Fat
+                |  and 
+                a(href='#')
+                  strong 1 other
+                |  followed you
+              ul.avatar-list
+                li.avatar-list-item
+                  img.img-circle(src='../assets/img/avatar-fat.jpg')
+                li.avatar-list-item
+                  img.img-circle(src='../assets/img/avatar-dhg.png')
+          li.list-group-item.media.p-a
+            .media-left
+              span.icon.icon-camera.text-muted
+            .media-body
+              small.pull-right.text-muted 3 min
+              .media-heading
+                a(href='#')
+                  strong Dave Gamache
+                |  uploaded a photo
+              .media-body-inline-grid(data-grid='images')
+                img(style='display: none', data-width='640', data-height='640', data-action='zoom', src='../assets/img/instagram_3.jpg')
+          li.list-group-item.media.p-a
+            .media-left
+              span.icon.icon-flag.text-muted
+            .media-body
+              small.pull-right.text-muted 3 min
+              .media-heading
+                a(href='#')
+                  strong Mark Otto
+                |  flagged your post
+              .panel.panel-default.m-t
+                .panel-body
+                  .media
+                    a.media-left(href='#')
+                      img.media-object.img-circle(src='../assets/img/avatar-fat.jpg')
+                    .media-body
+                      .media-body-text
+                        .media-heading
+                          small.pull-right.text-muted 1 hr
+                          h5.m-b-0 Jacob Thornton
+                        |  Donec id elit non mi porta gravida at eget metus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          li.list-group-item.media.p-a
+            .media-left
+              span.icon.icon-heart.text-muted
+            .media-body
+              small.pull-right.text-muted 4 hr
+              .media-heading
+                a(href='#')
+                  strong Mark Otto
+                |  and 
+                a(href='#')
+                  strong 2 others
+                |  favorited your post
+              ul.avatar-list
+                li.avatar-list-item
+                  img.img-circle(src='../assets/img/avatar-dhg.png')
+                li.avatar-list-item
+                  img.img-circle(src='../assets/img/avatar-mdo.png')
+                li.avatar-list-item
+                  img.img-circle(src='../assets/img/avatar-fat.jpg')
+          li.list-group-item.media.p-a
+            .media-left
+              span.icon.icon-user.text-muted
+            .media-body
+              small.pull-right.text-muted 30 min
+              .media-heading
+                | You followed 
+                a(href='#')
+                  strong Jacob Thornton
+                |  and 
+                a(href='#')
+                  strong 1 other
+              .m-t
+                .row
+                  .col-md-6
+                    .panel.panel-default.panel-profile
+                      .panel-heading(style='background-image: url(../assets/img/instagram_4.jpg);')
+                      .panel-body.text-center
+                        img.panel-profile-img(src='../assets/img/avatar-fat.jpg')
+                        h5.panel-title Jacob Thornton
+                        p.m-b-md Big belly rude boy, million dollar hustler. Unemployed.
+                        |  
+                        button.btn.btn-primary-outline.btn-sm
+                          span.icon.icon-add-user
+                          |  Follow
+                  .col-md-6
+                    .panel.panel-default.panel-profile
+                      .panel-heading(style='background-image: url(../assets/img/instagram_1.jpg);')
+                      .panel-body.text-center
+                        img.panel-profile-img(src='../assets/img/avatar-mdo.png')
+                        h5.panel-title Mark Otto
+                        p.m-b-md GitHub and Bootstrap. Formerly at Twitter. Huge nerd.
+                        |  
+                        button.btn.btn-primary-outline.btn-sm
+                          span.icon.icon-add-user
+                          |  Follow
+          li.list-group-item.media.p-a
+            .media-left
+              span.icon.icon-cog.text-muted
+            .media-body
+              small.pull-right.text-muted 30 min
+              .media-heading
+                a(href='#')
+                  strong Jacob Thornton
+                |  and 
+                a(href='#')
+                  strong 1 other
+                |  updated their settings
+              ul.avatar-list
+                li.avatar-list-item
+                  img.img-circle(src='../assets/img/avatar-fat.jpg')
+                li.avatar-list-item
+                  img.img-circle(src='../assets/img/avatar-dhg.png')
+          li.list-group-item.media.p-a
+            .media-left
+              span.icon.icon-creative-commons-noncommercial-us.text-muted
+            .media-body
+              small.pull-right.text-muted 1 min
+              .media-heading
+                a(href='#')
+                  strong Jacob Thornton
+                |  quit his job
+      .col-md-3
+        .panel.panel-default.m-b-md.hidden-xs
+          .panel-body
+            h5.m-t-0
+              | Active Users 
+              small
+                | &middot; 
+                a(href='#') View All
+            ul.media-list.media-list-stream
+              li.media.m-b
+                a.media-left(href='#')
+                  img.media-object.img-circle(src='../assets/img/avatar-fat.jpg')
+                .media-body
+                  strong Jacob Thornton
+                  |  @fat
+                  .media-body-actions
+                    button.btn.btn-primary-outline.btn-sm
+                      span.icon.icon-add-user
+                      |  Follow
+              li.media
+                a.media-left(href='#')
+                  img.media-object.img-circle(src='../assets/img/avatar-mdo.png')
+                .media-body
+                  strong Mark Otto
+                  |  @mdo
+                  .media-body-actions
+                    button.btn.btn-primary-outline.btn-sm
+                      span.icon.icon-add-user
+                      |  Follow
+          .panel-footer  Dave really likes these nerds, no one knows why though.
+        .panel.panel-default
+          .panel-body
+            | &copy; 2015 Bootstrap 
+            a(href='#') About
+            |  
+            a(href='#') Help
+            |  
+            a(href='#') Terms
+            |  
+            a(href='#') Privacy
+            |  
+            a(href='#') Cookies
+            |  
+            a(href='#') Ads
+            |  
+            a(href='#') info
+            |  
+            a(href='#') Brand
+            |  
+            a(href='#') Blog
+            |  
+            a(href='#') Status
+            |  
+            a(href='#') Apps
+            |  
+            a(href='#') Jobs
+            |  
+            a(href='#') Advertise

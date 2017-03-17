@@ -36,7 +36,7 @@ html(lang='en')
               a(href='../docs/index.html') Docs
           ul.nav.navbar-nav.navbar-right.m-r-0.hidden-xs
             li
-              a.app-notifications(href='../notifications/index.html')
+              a.app-notifications(href='../notifications')
                 span.icon.icon-bell
             li
               button.btn.btn-default.navbar-btn.navbar-btn-avitar(data-toggle='popover')
@@ -50,7 +50,7 @@ html(lang='en')
             li
               a(href='../profile') Profile
             li
-              a(href='../notifications/index.html') Notifications
+              a(href='../notifications') Notifications
             li
               a(data-toggle='modal', href='#msgModal') Messages
             li
@@ -237,6 +237,8 @@ html(lang='en')
     script.
       $(function() {
         if (window.BS&&window.BS.loader&&window.BS.loader.length) {
-          while(BS.loader.length){(BS.loader.pop())()}
+          while (BS.loader.length) {
+            (BS.loader.pop())();
+          }
         }
       });
