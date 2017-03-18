@@ -18,6 +18,13 @@ router.get('/', (req, res, next) => {
   next();
 });
 
+router.get('/login', (req, res, next) => {
+  res.render('login', {
+    page: 'login',
+    title: 'Login'
+  });
+});
+
 router.get('/profile', (req, res, next) => {
   res.render('profile', {
     page: 'profile',

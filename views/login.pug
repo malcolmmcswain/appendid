@@ -1,0 +1,17 @@
+extends layout.pug
+block content
+  .container-fluid.container-fill-height
+    .container-content-middle
+      form.m-x-auto.text-center.app-login-form(role='form')
+        a.app-brand.m-b-lg(href='../index.html')
+          img(src='../assets/img/brand.png', alt='brand')
+        .form-group
+          input.form-control(placeholder='Username')
+        .form-group.m-b-md
+          input.form-control(type='password', placeholder='Password')
+        .m-b-lg
+          button.btn.btn-primary Log In
+          |  
+          button.btn.btn-default Sign up
+        footer.screen-login
+          a.text-muted(href='#') Forgot password
